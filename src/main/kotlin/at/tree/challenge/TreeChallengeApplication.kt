@@ -1,4 +1,4 @@
-package at.prewave.treechallenge
+package at.tree.challenge
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: tree-challenge
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tree
+    username: test
+    password: secret

@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "cd40ebd2-f2f3-4f75-9070-9358ec6c6c09",
+		"name": "tree",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40153153"
+	},
+	"item": [
+		{
+			"name": "Get Tree",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/tree/:fromId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tree",
+						":fromId"
+					],
+					"query": [
+						{
+							"key": "depth",
+							"value": "",
+							"disabled": true
+						}
+					],
+					"variable": [
+						{
+							"key": "fromId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Edge",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fromId\": 1,\r\n    \"toId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/tree",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tree"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Edge",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/tree/:fromId/:toId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tree",
+						":fromId",
+						":toId"
+					],
+					"variable": [
+						{
+							"key": "fromId",
+							"value": "1"
+						},
+						{
+							"key": "toId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
